@@ -248,6 +248,14 @@ figure {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+
+:root {
+  --azul-claro: rgba(27, 45, 77, .8);
+  --azul-oscuro: rgba(12, 22, 40, .8);
+}
+
+
+
 .bg-verde {
   background: #309F71;
 }
@@ -422,6 +430,10 @@ img {
   font-weight: 600;
   text-transform: capitalize;
   font-style: normal;
+}
+
+.butn-contacto-header {
+  
 }
 
 .butn.butn-md {
@@ -10662,7 +10674,8 @@ padding: 20px;
   .sobre-mi-experiencias-mobile,
   .filter-mobile,
   #tabs-portfolio-mobile,
-  .tabs-contratacion-mobile {
+  .tabs-contratacion-mobile,
+  .gallery-portfolio-mobile {
     display: none !important;
   }
   .testim-controls.testim-controls-mobile {
@@ -10900,18 +10913,81 @@ padding: 20px;
   margin-left: 0 !important;
   padding: 8px;
 }
+.header-landing-portfolio {
+  background-size: cover;
+}
 .header-anuncios-puv-eg {
-  background-image: url('/../assets/imgs/landings/header-anuncios-puv-eg.jpg'), linear-gradient( #1B2D4D, #0C1628);
+  
   background-image:
     linear-gradient(to bottom, rgba(27, 45, 77, .8), rgba(12, 22, 40, .8)),
     url('/../assets/imgs/landings/header-anuncios-puv-eg.jpg');
-    background-size: cover;
+    
+}
+.header-anuncios-catalogo-chill {
+  background-image:
+  linear-gradient(to bottom, rgba(27, 45, 77, .8), rgba(12, 22, 40, .8)),
+  url('/../assets/imgs/landings/fondo-chill.jpg');
+}
+.header-anuncios-mibo {
+  background-image:
+  linear-gradient(to bottom, rgba(27, 45, 77, .8), rgba(12, 22, 40, .8)),
+  url('/../assets/imgs/landings/fondo-mibo.jpg');
+}
+.header-anuncios-graficos-eg {
+  background-image:
+  linear-gradient(to bottom, rgba(27, 45, 77, .8), rgba(12, 22, 40, .8)),
+  url('/../assets/imgs/landings/fondo-anuncios-graficos-eg.jpg');
+}
+.header-lead-funnel,
+.header-reel-recetas {
+  background-image:
+  linear-gradient(to bottom, rgba(27, 45, 77, .8), rgba(12, 22, 40, .8)),
+  url('/../assets/imgs/landings/fondo-reel-recetas.jpg');
+}
+.header-logo-as{
+  background-image:
+  linear-gradient(to bottom, rgba(27, 45, 77, .8), rgba(12, 22, 40, .8)),
+  url('/../assets/imgs/landings/fondo-logo.png');
+}
+.header-muestra-producto {
+  background-image:
+  linear-gradient(to bottom, rgba(27, 45, 77, .8), rgba(12, 22, 40, .8)),
+  url('/../assets/imgs/landings/fondo-muestra-producto.png');
+}
+.header-novedades {
+  background-image:
+  linear-gradient(to bottom, rgba(27, 45, 77, .8), rgba(12, 22, 40, .8)),
+  url('/../assets/imgs/landings/fondo-novedades.jpg');
+}
+.header-op-negocio {
+  background-image:
+  linear-gradient(to bottom, rgba(27, 45, 77, .8), rgba(12, 22, 40, .8)),
+  url('/../assets/imgs/landings/fondo-op-negocio.jpg');
+}
+.header-plantillas-rss {
+  background-image:
+  linear-gradient(to bottom, rgba(27, 45, 77, .95), rgba(12, 22, 40, .95)),
+  url('/../assets/imgs/landings/fondo-plantillas-rss.png');
+}
+.header-rebranding-eg {
+  background-image:
+  linear-gradient(to bottom, rgba(27, 45, 77, .95), rgba(12, 22, 40, .95)),
+  url('/../assets/imgs/landings/fondo-rebranding.png');
+}
+.video-der {
+  text-align: right !important;
+}
+.video-izq {
+  text-align: left !important;
 }
 .header-buttons-landing a button {
   width: 100% !important;
 }
 .header-buttons-landing a button {
   margin-left: 0 !important;
+}
+.header-buttons-landing #datos-contacto h4 {
+  text-align: center;
 }
 .header-datos-landing {
   text-align: center !important;
@@ -10941,17 +11017,19 @@ padding: 20px;
 }
 
 .contenedor-video {
-  height: 390px;
-  overflow: hidden;
+  
   text-align: center;
 }
 
 .contenedor-video video,
-.contenedor-video iframe,
-.contenedor-imagen img {
+.contenedor-video iframe{
   border-radius: 20px;
+  height: 300px;
+  background-size: 100%;
 }
-
+.contenedor-video video {
+  
+}
 .contenedor-imagen {
   text-align: center;
   width: 300px;
@@ -10994,12 +11072,37 @@ padding: 20px;
   .nav-link-mobile img {
     width: 40px;
   }
+  .contenedor-imagen {
+    margin: 0 auto;
+  }
+  .row.masonry.imagenes-landings,
+  .row.imagenes-landings {
+    display: none;
+  }
+  .row.imagenes-landings.imagen-landing-uno {
+    display: block;
+  }
+  .row.imagenes-landings.imagen-landing-uno img {
+    width: 300px;
+  }
 }
 .filter {
   font-family: 'Roboto';
 }
 
+.contenedor-datos-contacto-landings a {
+  display: grid;
 
+}
+
+.contenedor-datos-contacto-landings h4 {
+  text-align: center;
+}
+
+.contenedor-imagen a {
+  border-radius: 15px;
+  overflow: hidden;
+}
 
 
 
